@@ -1,0 +1,21 @@
+﻿@model Assignment
+
+<form class="myForm" method="post" action="/Assignment/Edit">
+    <input class="mb-3" type="hidden" name="Id" value="@Model.Id" />
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Title</label>
+        <input required type="text" value="@Model.Title" name="Title" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Description</label>
+        <input required type="text" value="@Model.Description" name="Description" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">DeadLine</label>
+        <input required type="datetime-local" name="DeadLine" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    </div>
+    <div class="mb-3">
+        <input hidden required type="text" name="PdfFile" value="@Model.PdfFile" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    </div>
+    <button type="submit" class="btn btn-success">Update</button>
+</form>

@@ -1,0 +1,24 @@
+﻿<h1>Create New</h1>
+<h5>List-item</h5>
+
+<hr />
+
+<form enctype="multipart/form-data" class="myForm" method="post" action="/Assignment/CreateNew">
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Title</label>
+        <input required type="text" name="Title" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Description</label>
+        <input required type="text" name="Description" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">DeadLine</label>
+        <input required type="datetime-local" name="DeadLine" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Upload File</label>
+        <input required type="file" name="PdfFile" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    </div>
+    <button type="submit" class="btn btn-primary">Create</button>
+</form>
